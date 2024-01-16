@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import LocationShowcase from "./components/Navbar/NavLocation";
+import LocationShowcase from "./components/NavLocation";
 import RelationFactor from "./routes/RelationFactor";
 
 function App() {

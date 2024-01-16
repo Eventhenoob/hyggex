@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Player from "../../Player";
+import Player from "../Player";
 
 const OptionsSlider = () => {
   const [currentSelected, setCurrentSelected] = useState(0);
@@ -82,9 +82,15 @@ const OptionsSlider = () => {
         </li>
       </ul>
 
-      <div className="w-[40rem] ">
-        <Player />
-      </div>
+      {currentSelected === 0 ? (
+        <div className="w-[40rem] mt-10 ">
+          <Player />
+        </div>
+      ) : (
+        <div className="flex justify-center w-full mt-10">
+          <p className="text-ye">We are working on this part</p>
+        </div>
+      )}
     </div>
   );
 };
